@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | EduPortal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 48px 40px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #0a1929;
+        }
+
+        .header .edu-badge {
+            background: #e9eef2;
+            color: #0a1929;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .error-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: 700;
+            color: #0a1929;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .error-message {
+            font-size: 20px;
+            color: #546e7a;
+            margin-bottom: 8px;
+        }
+
+        .error-desc {
+            color: #78909c;
+            font-size: 16px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background: #f8fafc;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: 1px solid #e9eef2;
+        }
+
+        .nav-item:hover {
+            background: #e9eef2;
+            border-color: #0a1929;
+        }
+
+        .nav-icon {
+            font-size: 24px;
+            margin-right: 16px;
+        }
+
+        .nav-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .nav-text h3 {
+            color: #0a1929;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .nav-text p {
+            color: #546e7a;
+            font-size: 14px;
+        }
+
+        .nav-arrow {
+            color: #78909c;
+            font-size: 20px;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 14px 16px;
+            border: 1px solid #e9eef2;
+            border-radius: 12px;
+            font-size: 15px;
+            outline: none;
+            transition: border 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: #0a1929;
+        }
+
+        .search-box button {
+            padding: 14px 24px;
+            background: #0a1929;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .search-box button:hover {
+            background: #1a2a3a;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #e9eef2;
+        }
+
+        .footer a {
+            color: #546e7a;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: #0a1929;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 32px 20px;
+            }
+
+            .error-code {
+                font-size: 90px;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .footer {
+                flex-wrap: wrap;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="logo">📚 fpenagaricanolab.cals.wisc</span>
+            <span class="edu-badge">.edu</span>
+        </div>
+
+        <div class="error-section">
+            <div class="error-code">404</div>
+            <div class="error-message">Page not found</div>
+            <div class="error-desc">The page you're looking for doesn't exist or has been moved</div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <div class="nav-text">
+                    <h3>Home</h3>
+                    <p>Back to dashboard</p>
+                </div>
+                <span class="nav-arrow">→</span>
+            </a>
+            
+            <a href="#" class="nav-item">
+                <span class="nav-icon">📖</span>
+                <div class="nav-text">
+                    <h3>Courses</h3>
+                    <p>Browse all courses</p>
+                </div>
+                <span class="nav-arrow">→</span>
+            </a>
+            
+            <a href="#" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <div class="nav-text">
+                    <h3>Student Portal</h3>
+                    <p>Access your account</p>
+                </div>
+                <span class="nav-arrow">→</span>
+            </a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search courses, materials...">
+            <button>Search</button>
+        </div>
+
+        <div class="footer">
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+    </div>
+</body>
+</html>
