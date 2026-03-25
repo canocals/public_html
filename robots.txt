@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://fpenagaricanolab.cals.wisc.edu/site.xml
